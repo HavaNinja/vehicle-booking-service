@@ -22,9 +22,6 @@
 * [Maven](https://maven.apache.org/download.cgi)
 
 
-* [Docker](https://www.docker.com/get-docker)
-
-
 ### Run Local
 
 ```bash
