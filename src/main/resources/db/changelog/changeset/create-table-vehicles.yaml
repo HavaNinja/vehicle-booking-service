@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-vehicles
+      author: Andrei HAVERIUC
+      changes:
+        - createTable:
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: fuel
+                  type: varchar(255)
+              - column:
+                  name: make
+                  type: varchar(255)
+              - column:
+                  name: model
+                  type: varchar(255)
+              - column:
+                  name: registration_number
+                  type: varchar(255)
+                  constraints:
+                    unique: true
+              - column:
+                  name: category_id
+                  type: uuid

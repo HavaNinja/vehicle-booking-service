@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-user
+      author: Andrei HAVERIUC
+      changes:
+        - insert:
+            schemaName: public
+            tableName: users
+            columns:
+              - column:
+                  name: user_id
+                  value: 515abc5d-88f3-4ea0-9c2a-aa1b78c4eaf6
+              - column:
+                  name: user_name
+                  value: John Doe

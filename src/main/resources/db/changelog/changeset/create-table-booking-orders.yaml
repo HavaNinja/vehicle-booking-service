@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-booking-orders
+      author: Andrei HAVERIUC
+      changes:
+        - createTable:
+            tableName: booking_orders
+            columns:
+              - column:
+                  name: order_id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: price
+                  type: numeric(19, 2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: start_ordering_date
+                  type: date
+              - column:
+                  name: end_ordering_date
+                  type: date

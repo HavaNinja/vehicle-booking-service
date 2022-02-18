@@ -1,0 +1,73 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-booking-order
+      author: Andrei HAVERIUC
+      changes:
+        - insert:
+            schemaName: public
+            tableName: booking_orders
+            columns:
+              - column:
+                  name: order_id
+                  value: e594561a-2ff2-4430-be7c-1c2e6f49c18b
+              - column:
+                  name: price
+                  value: 35.00
+              - column:
+                  name: user_id
+                  value: 515abc5d-88f3-4ea0-9c2a-aa1b78c4eaf6
+              - column:
+                  name: start_ordering_date
+                  value: now()
+              - column:
+                  name: end_ordering_date
+                  value: now()
+              - insert:
+                  schemaName: public
+                  tableName: booking_order_vehicle
+                  columns:
+                    - column:
+                        name: order_id
+                        value: e594561a-2ff2-4430-be7c-1c2e6f49c18b
+                    - column:
+                        name: vehicle_id
+                        value: 0e8ab208-94f6-4484-8d9f-535d70e15624
+        - insert:
+            schemaName: public
+            tableName: booking_orders
+            columns:
+              - column:
+                  name: order_id
+                  value: 515abc5d-88f3-4ea0-9c2a-aa1b78c4eaf5
+              - column:
+                  name: price
+                  value: 25.00
+              - column:
+                  name: user_id
+                  value: 515abc5d-88f3-4ea0-9c2a-aa1b78c4eaf6
+              - column:
+                  name: start_ordering_date
+                  value: now()
+              - column:
+                  name: end_ordering_date
+                  value: now()
+        - insert:
+            schemaName: public
+            tableName: booking_order_vehicle
+            columns:
+              - column:
+                  name: order_id
+                  value: 515abc5d-88f3-4ea0-9c2a-aa1b78c4eaf5
+              - column:
+                  name: vehicle_id
+                  value: 2f6639ec-ab78-49ec-baa3-ff8158a6663f
+        - insert:
+            schemaName: public
+            tableName: booking_order_vehicle
+            columns:
+              - column:
+                  name: order_id
+                  value: e594561a-2ff2-4430-be7c-1c2e6f49c18b
+              - column:
+                  name: vehicle_id
+                  value: 0e8ab208-94f6-4484-8d9f-535d70e15624

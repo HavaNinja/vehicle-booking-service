@@ -1,0 +1,137 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-initial-vehicles
+      author: Andrei HAVERIUC
+      changes:
+        - insert:
+            schemaName: public
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  value: 0e8ab208-94f6-4484-8d9f-535d70e15624
+              - column:
+                  name: fuel
+                  value: PETROL
+              - column:
+                  name: make
+                  value: Scoda
+              - column:
+                  name: model
+                  value: Superb
+              - column:
+                  name: category_id
+                  value: 4b7448f0-6991-47b6-8362-0f6e99ff2a66
+              - column:
+                  name: registration_number
+                  value: ZXC 123
+        - insert:
+            schemaName: public
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  value: 1ad92c94-d5cd-443e-bdbe-a9a8250a0e30
+              - column:
+                  name: fuel
+                  value: DIESEL
+              - column:
+                  name: make
+                  value: Alpina
+              - column:
+                  name: model
+                  value: B3 touring
+              - column:
+                  name: category_id
+                  value: 4b7448f0-6991-47b6-8362-0f6e99ff2a66
+              - column:
+                  name: registration_number
+                  value: GED 754
+        - insert:
+            schemaName: public
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  value: a198885e-2993-476b-8375-b9535331a072
+              - column:
+                  name: fuel
+                  value: DIESEL
+              - column:
+                  name: make
+                  value: Ford
+              - column:
+                  name: model
+                  value: Focus
+              - column:
+                  name: category_id
+                  value: 4b7448f0-6991-47b6-8362-0f6e99ff2a66
+              - column:
+                  name: registration_number
+                  value: ZED 852
+        - insert:
+            schemaName: public
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  value: 5703b958-336b-49ba-abbd-5a3ec74300c8
+              - column:
+                  name: fuel
+                  value: PETROL
+              - column:
+                  name: make
+                  value: Chrysler
+              - column:
+                  name: model
+                  value: Pacifica
+              - column:
+                  name: category_id
+                  value: 9e13e7a4-dc85-43ca-8242-73c2e3abdba9
+              - column:
+                  name: registration_number
+                  value: ZTG 873
+        - insert:
+            schemaName: public
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  value: 37f7c47a-7b2e-45a6-85e6-4f18122358b1
+              - column:
+                  name: fuel
+                  value: PETROL
+              - column:
+                  name: make
+                  value: Honda
+              - column:
+                  name: model
+                  value: Odessey
+              - column:
+                  name: category_id
+                  value: 9e13e7a4-dc85-43ca-8242-73c2e3abdba9
+              - column:
+                  name: registration_number
+                  value: AWE 888
+        - insert:
+            schemaName: public
+            tableName: vehicles
+            columns:
+              - column:
+                  name: vehicle_id
+                  value: 2f6639ec-ab78-49ec-baa3-ff8158a6663f
+              - column:
+                  name: fuel
+                  value: PETROL
+              - column:
+                  name: make
+                  value: Volkswagen
+              - column:
+                  name: model
+                  value: Polo
+              - column:
+                  name: category_id
+                  value: 515abc5d-88f3-4ea0-9c2a-aa1b78c4eaf4
+              - column:
+                  name: registration_number
+                  value: ADE 784

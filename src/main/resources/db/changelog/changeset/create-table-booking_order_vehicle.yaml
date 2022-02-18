@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-booking-order-vehicle
+      author: Andrei HAVERIUC
+      changes:
+        - createTable:
+            tableName: booking_order_vehicle
+            columns:
+              - column:
+                  name: order_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: vehicle_id
+                  type: uuid
+                  constraints:
+                    nullable: false

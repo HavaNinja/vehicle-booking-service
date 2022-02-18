@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/create-table-categories.yaml
+  - include:
+      file: db/changelog/changeset/create-table-booking-orders.yaml
+  - include:
+      file: db/changelog/changeset/create-table-users.yaml
+  - include:
+      file: db/changelog/changeset/create-table-vehicles.yaml
+  - include:
+      file: db/changelog/changeset/create-table-booking_order_vehicle.yaml
+  - include:
+      file: db/changelog/changeset/add-foreign-keys.yaml
+  - include:
+      file: db/changelog/changeset/insert-initial-categories.yaml
+  - include:
+      file: db/changelog/changeset/insert-initial-vehicles.yaml
+  - include:
+      file: db/changelog/changeset/insert-initial-user.yaml
+  - include:
+      file: db/changelog/changeset/insert-initial-booking-order.yaml

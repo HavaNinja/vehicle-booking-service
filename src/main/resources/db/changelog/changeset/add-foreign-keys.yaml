@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-foreign-keys
+      author: Andrei HAVERIUC
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: vehicle_id
+            baseTableName: booking_order_vehicle
+            constraintName: booking_order_vehicle_fk
+            referencedColumnNames: vehicle_id
+            referencedTableName: vehicles
+        - addForeignKeyConstraint:
+            baseColumnNames: order_id
+            baseTableName: booking_order_vehicle
+            constraintName: booking_order_vehicle_fk2
+            referencedColumnNames: order_id
+            referencedTableName: booking_orders
+        - addForeignKeyConstraint:
+           baseColumnNames: category_id
+           baseTableName: vehicles
+           constraintName: fk_vehicle_category
+           referencedColumnNames: category_id
+           referencedTableName: categories
+        - addForeignKeyConstraint:
+           baseColumnNames: user_id
+           baseTableName: booking_orders
+           constraintName: fk_user_order
+           referencedColumnNames: user_id
+           referencedTableName: users
